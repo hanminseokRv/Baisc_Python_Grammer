@@ -1,2 +1,3 @@
-# Baisc_Python_Grammer
-Practice basic python usage
+Python Project
+
+from basic to Ai realization
