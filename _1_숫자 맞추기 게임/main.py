@@ -1,37 +1,37 @@
 import random as rd
 
 answer_random_number=rd.randint(1, 100)
+print(answer_random_number)
+
 attempt=1
 
-def real_game():
-    check_answer(private_number, answer_number):
     
-    
-
 def case():
+    global attempt
     if attempt<=10:
-        return "천재!"
+        print("천재!")
     elif attempt>10 and attempt<=20:
-        return "똑똑할지도..?"
+        print("똑똑할지도..?")
     elif attempt>20 and attempt<=30:
-        return "보통"
+        print("보통")
     elif attempt>30 and attempt<=50:
-        return "아쉽네요.."
+        print("아쉽네요..")
     else:
-        return "바보"
-
-    
+        print("바보")
 
 
-def check_answer(private_number, answer_number)
-    private_number=int(input(f"{attempt}번째 시도! 숫자를 맞혀보아요!>>>"))
-    answer_number=answer_random_number
-    case=case()
-    if private_number==answer_number:
-        print(f"정답입니다~~!! {attempt}번만에 통과한 당신은 {case}")
-    else:
-        print("땡!")
-        attempt+=1
+
+def real_game(attempt):
+    while True:
+        private_number=int(input("숫자를 맞혀보아요!>>>"))
+        
+        if private_number!=answer_random_number:
+            print("땡! 다시 입력하세요!")
+            attempt+=1
+        else:
+            case()
+            return attempt
 
 
-real_game()
+
+real_game(attempt)
