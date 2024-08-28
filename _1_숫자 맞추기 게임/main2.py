@@ -1,18 +1,18 @@
 import random as rd
 
 answer_random_number=rd.randint(1, 100)
-print(answer_random_number)
+
 
 
        
 
 def finish(attempt):
     result=""
-    if attempt<=10:
+    if attempt<=8:
         result+="천재!"          
-    elif attempt>10 and attempt<=20:
+    elif attempt>8 and attempt<=15:
         result+="똑똑할지도..?"
-    elif attempt>20 and attempt<=40:
+    elif attempt>15 and attempt<=20:
         result+="보통입니다."
     else:
         result+="실망이군요.."
